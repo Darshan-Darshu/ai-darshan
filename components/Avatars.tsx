@@ -30,7 +30,7 @@ function Avatars() {
 
       <div className='flex -space-x-5'>
         {all.map((other) => (
-          <TooltipProvider>
+          <TooltipProvider key={other?.info.avatar}>
             <Tooltip>
               <TooltipTrigger>
                 <Avatar className='border-2 hover:z-50'>
